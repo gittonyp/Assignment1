@@ -1,0 +1,405 @@
+    /*
+        RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assessment: Assignment 1
+    Author: Nguyen Minh Trong Nhan
+    ID: s3924462
+    Acknowledgement: I declare that in submitting all work for this assessment I have read, understood and 
+    agreed to the content and expectations of the Assessment Declaration
+    
+    */
+html,body{
+  overflow-x: hidden;
+ }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .logo {
+    float: left;
+  }
+
+  hr.rounded {
+    margin: 120px;
+    border-top: 4px solid #bbb;
+    border-radius: 5px;
+  }
+
+  .universalfont {
+    font-size: 40px;
+    font-family: "Rosario";
+
+  }
+
+  a:link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+  a:visited{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+  /*Navigation Bar*/
+
+  .navigation-bar {
+    background-color: #969696;
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .navigation-bar ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+  }
+  
+  .navigation-bar li {
+    list-style-type: none;
+    padding: 0px;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: inline;
+  }
+
+  .navigation-bar li a {
+    color: white;
+    font-size: 16px;
+    font-family: 'Rosario';
+    word-spacing: 4;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 5px 15px;
+  }
+
+  .navigation-bar li button {
+    background-color: #969696;
+  }
+
+  .dropdown {
+  float: right;
+  overflow: hidden;
+  list-style-type: none;
+  margin-bottom: 4px;
+  display: inline;
+  font-size: 14px;
+  margin-top: 10px;
+  font-family: 'Rosario';
+}
+
+  .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: 'Rosario';
+  margin: 0;/
+}
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #4d4d4d;
+}
+
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+  .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+  .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+  .dropdown:hover .dropdown-content {
+  display: block;
+}
+/*Header*/
+
+  .container{
+    background-color:#000000;
+    position:relative;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titleWelcome h1 {
+    font-family: "Rosario";
+    color: white;
+    text-align: center;
+    font-size: 280px;
+    font-weight: bold;
+    position: relative;
+  }
+
+  .rocket {
+    position: absolute;
+    left:200px
+  }
+
+
+  .stars1 {
+    position: absolute;
+    top: 60px;
+    left: 850px;
+  }
+
+  .stars2 {
+    position: absolute;
+    bottom: 0px;
+    left: 150px;
+  }
+
+  .ufo {
+    position: absolute;
+    bottom: 0px;
+    right: 550px;
+  }
+
+  .spacemoon {
+    text-align: right;
+    position: absolute;
+    right:0px;
+    bottom:0px;
+  }
+/*Body section*/
+
+.bookSection-container {
+    background-color: white;
+    position: relative;
+    display: flex;
+    padding: 40px;
+    justify-content: space-around;
+  }
+
+  .itemcard {
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 35px 20px 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .itemcard img {
+    width: 250px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .itemcard h2 {
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid #969696;
+    border-radius: 5px;
+    margin: 30px 40px;
+    padding: 10px 0px;
+    background-color: #969696;
+    color: white;
+    font-family: "Rosario";
+    text-decoration:none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+/*Footer*/
+
+.footer-container{
+  background-color:rgb(0, 0, 0);
+  position:relative;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-navigation-bar {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.footer-navigation-bar ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+}
+
+.footer-navigation-bar li {
+  list-style-type: none;
+  padding: 0px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline;
+}
+
+.footer-navigation-bar li a {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-family: 'Rosario';
+  word-spacing: 4;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 5px 15px;
+}
+
+@media only screen and (max-width:768px) {
+  .spacemoon {
+    visibility: hidden;
+  }
+  .stars1 {
+    visibility: hidden;
+  }
+  .stars2 {
+    visibility: hidden;
+  }
+  .rocket {
+    top: auto;
+    bottom: 360px;
+  }
+  .ufo {
+      position: absolute;
+      bottom: 0px;
+      right: 450px;
+  }
+  .navigation-bar ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    vertical-align: top;
+  }
+  .universalfont {
+    font-size: 50px;
+    font-family: "Rosario";
+    margin: auto;
+}
+  .bookSection-container {
+    background-color: white;
+    position: relative;
+    display: flex;
+    padding: 40px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .itemcard {
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 35px 20px 10px 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .titleWelcome h1 {
+    font-family: "Rosario";
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+  .navigation-bar ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    vertical-align: top;
+  }
+  .titleWelcome h1 {
+    font-family: "Rosario";
+    color: white;
+    text-align: center;
+    font-size: 260px;
+    font-weight: bold;
+  }
+  .titleWelcome h3 {
+    font-family: "Rosario";
+    color: #5b3d2c;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    padding: 40px 0 0 70px;
+  }
+  .aboutUs h2 {
+    font-family: "Rosario";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #5b3d2c;
+    margin: 40px 120px;
+  }
+  .universalfont {
+    font-size: 40px;
+    font-family: "Rosario";
+    margin: auto;
+}
+  .bookSection-container {
+    background-color: white;
+    position: relative;
+    display: flex;
+    padding: 40px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .itemcard {
+    border: 3px solid black;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 35px 20px 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .spacemoon {
+    visibility: hidden;
+  }
+  .stars1 {
+    visibility: hidden;
+  }
+  .stars2 {
+    visibility: hidden;
+  }
+  .rocket {
+    top: auto;
+    bottom: 360px;
+  }
+  .ufo {
+      position: absolute;
+      bottom: 0px;
+      right: 450px;
+  }
+}

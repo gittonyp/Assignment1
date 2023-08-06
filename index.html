@@ -1,0 +1,137 @@
+    <!--
+        RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assessment: Assignment 1
+    Author: Nguyen Minh Trong Nhan
+    ID: s3924462
+    Acknowledgement: I declare that in submitting all work for this assessment I have read, understood and 
+    agreed to the content and expectations of the Assessment Declaration
+    -->
+<!DOCTYPE html>
+<html>
+    <head>
+
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My own bookstore</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Rosario' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rowdies' rel='stylesheet'>
+    
+</head>
+
+<body>
+    <header>
+        <div class="navigation-bar">
+            <img src="images/logo.png" alt="logo" class="logo">
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#aboutUs">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Books
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="horror.html">Horror</a>
+                            <a href="sci-fi.html">Sci-fi</a>
+                        </div>
+                    </div>
+
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="titleWelcome">
+                <h1>WELCOME TO HO-FI CAFE</h1>
+                <h3>“May you find 
+                    <br>your book in 
+                    <br>this place”</h3>
+            </div>
+            <img src="images/books.png" alt="books" class="bottombooks">
+        </div>
+
+    </header>
+
+    <section>
+        <div class="middle-container">
+            <div id="aboutUs" class="aboutUs"><u><i>About Us</i></u>
+                <h2>We are an independant bookstore specialize in the Horror and Sci-fi genre,
+                    be sure to check out our unique stocks!</h2>
+            </div>
+        </div>
+    </section>
+
+    <hr class="rounded">
+
+    <section id="books" class="midsection">
+        <h1 class="universalfont" style="background-color: #31223F;"><i><a href="horror.html">Horror👻</a></i></h1>
+        <div class="bookSection-container">
+            <div class="itemcard">
+                <img src="images/bookimages/the_shining.jpg" alt="the-shining">
+                <h2><a href="the-shining.html">Buy Now</a></h2>
+            </div>
+            <div class="itemcard">
+                <img src="images/bookimages/drsleep.jpg" alt="drsleep">
+                <h2><a href="doctor-sleep.html">Buy Now</a></h2>
+            </div>
+            <div class="itemcard">
+                <img src="images/bookimages/WWZ.jpg" alt="WWZ">
+                <h2><a href="WWZ.html">Buy Now</a></h2>
+            </div>
+        </div>
+    </section>
+    <section id="books" class="midsection">
+        <h1 class="universalfont" style="background-color: #969696;"><i><a href="sci-fi.html">Sci-fi🚀</a></i></h1>
+        <div class="bookSection-container">
+            <div class="itemcard">
+                <img src="images/bookimages/new_gaia_life_after_earth.jpg" alt="new-gaia-life-after-earth">
+                <h2><a href="new-gaia-life-after-earth.html">Buy Now</a></h2>
+            </div>
+            <div class="itemcard">
+                <img src="images/bookimages/the_road.jpg" alt="the-road">
+                <h2><a href="the-road.html">Buy Now</a></h2>
+            </div>
+            <div class="itemcard">
+                <img src="images/bookimages/to_sleep_in_a_sea_of_stars.jpg" alt="to_sleep_in_a_sea_of_stars">
+                <h2><a href="to-sleep-in-a-sea-of-stars.html">Buy Now</a></h2>
+            </div>
+        </div>
+    </section>
+
+    <hr class="rounded">
+
+    <section class="middle-container">
+        <h1 class="universalfont" style="background-color: #960606;"><i>Watch more📹</i></h1>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/ZFL2T27Gf_E" frameborder="0" height="400px" width="600px"></iframe>
+        </div>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/VMzg4-Fql4c" frameborder="0" height="400px" width="600px"></iframe>
+        </div>
+        </section>
+
+    <hr class="rounded">
+</body>
+
+<footer>
+    <div class="footer-navigation-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</footer>

@@ -1,0 +1,362 @@
+    /*
+        RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assessment: Assignment 1
+    Author: Nguyen Minh Trong Nhan
+    ID: s3924462
+    Acknowledgement: I declare that in submitting all work for this assessment I have read, understood and 
+    agreed to the content and expectations of the Assessment Declaration
+    
+    */
+html,body{
+  overflow-x: hidden;
+ }
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .logo {
+    float: left;
+  }
+
+  hr.rounded {
+    margin: 120px;
+    border-top: 4px solid #bbb;
+    border-radius: 5px;
+  }
+
+  .universalfont {
+    font-size: 40px;
+    font-family: "Rosario";
+
+  }
+
+  a:link {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:visited{
+    text-decoration: none;
+    color: black;
+  }
+  /*Navigation Bar*/
+
+  .navigation-bar {
+    background-color: #ffb64a;
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .navigation-bar ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+  }
+  
+  .navigation-bar li {
+    list-style-type: none;
+    padding: 0px;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: inline;
+  }
+
+  .navigation-bar li a {
+    color: white;
+    font-size: 16px;
+    font-family: 'Rosario';
+    word-spacing: 4;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 5px 15px;
+  }
+
+  .navigation-bar li button {
+    background-color: #ffb64a;
+  }
+
+  .dropdown {
+  float: right;
+  overflow: hidden;
+  list-style-type: none;
+  margin-bottom: 4px;
+  display: inline;
+  font-size: 14px;
+  margin-top: 10px;
+  font-family: 'Rosario';
+}
+
+  .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: 'Rosario';
+  margin: 0;/
+}
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #f19d1f;
+}
+
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+  .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+  .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+  .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*Body*/
+  .contact {
+    font-family: "Rosario";
+    color: #ffb64a;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold
+  }
+
+  .middle-container{
+    background-color:white;
+    position:relative;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+/*Contact form*/
+
+  .contactform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+  }
+
+  .contactform p {
+    font-family: "Rosario";
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+  }
+
+  .contactform label {
+    text-align: left;
+    clear: both;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .contactform div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .contactform select {
+    padding: 0px 80px;
+    border-width: 3px;
+    border-color: black;
+    font-family: 'Rosario';
+    font-size: larger;
+    border-radius: 60px;
+    margin-left: 80px;
+    font-weight: bold;
+  }
+
+  .contactform input {
+    padding: 0px 80px;
+    border-width: 3px;
+    border-color: black;
+    font-family: 'Rosario';
+    font-size: larger;
+    border-radius: 60px;
+    margin-left: 80px;
+    font-weight: bold;
+  }
+
+  .contactform label {
+    font-family: 'Rosario';
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  .contactform textarea {
+    border-width: 3px;
+    border-color: black;
+    font-family: 'Rosario';
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .contactform button {
+    text-align: center;
+    font-size: 25px;
+    border: 3px solid black;
+    border-radius: 30px;
+    margin: 70px 0px 0px 0px;
+    padding: 10px 90px;
+    color: white;
+    font-family: "Rosario";
+    text-decoration: none;
+  }
+
+  .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  .radio {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+
+/*Footer*/
+
+.footer-container{
+  background-color:rgb(0, 0, 0);
+  position:relative;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-navigation-bar {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.footer-navigation-bar ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+}
+
+.footer-navigation-bar li {
+  list-style-type: none;
+  padding: 0px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline;
+}
+
+.footer-navigation-bar li a {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-family: 'Rosario';
+  word-spacing: 4;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 5px 15px;
+}
+
+@media only screen and (max-width:768px) {
+  .navigation-bar ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    vertical-align: top;
+  }
+  .contactform div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contactform p {
+    font-family: "Rosario";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+  }
+  .contactform select {
+    padding: 0px 80px;
+    border-width: 3px;
+    border-color: black;
+    font-family: 'Rosario';
+    font-size: larger;
+    border-radius: 60px;  
+    font-weight: bold;
+    margin: auto;
+  }
+  .contactform input {
+    padding: 0px 80px;
+    border-width: 3px;
+    border-color: black;
+    font-family: 'Rosario';
+    font-size: larger;
+    border-radius: 60px;
+    font-weight: bold;
+    margin: auto;
+  }
+  .contactform input {
+    padding: 0px 80px;
+    border-width: 3px;
+    border-color: black;
+    font-family: 'Rosario';
+    font-size: larger;
+    border-radius: 60px;
+    font-weight: bold;
+    margin: auto;
+  }
+  .contactform textarea {
+    border-width: 3px;
+    border-color: black;
+    font-family: 'Rosario';
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 10px;
+    width: 300px;
+    margin: auto;
+  }
+}
